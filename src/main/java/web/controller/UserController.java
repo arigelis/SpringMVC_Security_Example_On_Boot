@@ -30,7 +30,7 @@ public class UserController {
     @RequestMapping(value = "/admin", method = RequestMethod.GET)
     public ModelAndView allUsers() {
         List<User> listUser = userService.allUsers();
-        ModelAndView mav = new ModelAndView("admin");
+        ModelAndView mav = new ModelAndView("test");
         mav.addObject("listUser", listUser);
         return mav;
     }
@@ -91,7 +91,7 @@ public class UserController {
 
     @RequestMapping(value = "login", method = RequestMethod.GET)
     public String loginPage() {
-        return "login";
+        return "test";
     }
 
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
